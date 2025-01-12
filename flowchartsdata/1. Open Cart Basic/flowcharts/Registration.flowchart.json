@@ -56,6 +56,15 @@
         "content": "do nothing",
         "nodeType": "action",
         "branches": [
+          "fcn_newnodeadded_0"
+        ],
+        "validationBoundary": "validationstart"
+      },
+      "fcn_newnodeadded_0": {
+        "id": "fcn_newnodeadded_0",
+        "content": "New Node Added",
+        "nodeType": "action",
+        "branches": [
           "fcn_registernewuser_0"
         ]
       }
@@ -74,19 +83,23 @@
         "left": 500.0
       },
       "fcn_registernewuser_0": {
-        "top": 389.0,
+        "top": 449.0,
         "left": 502.0
       },
       "fcn_verifyuserregistered_0": {
-        "top": 453.13543701171875,
+        "top": 513.1354370117188,
         "left": 500.0
       },
       "fcn_logout_0": {
-        "top": 518.2916870117188,
+        "top": 578.2916870117188,
         "left": 501.0
       },
       "fcn_donothing_0": {
         "top": 328.0,
+        "left": 500.0
+      },
+      "fcn_newnodeadded_0": {
+        "top": 387.0000228881836,
         "left": 500.0
       }
     },
@@ -97,6 +110,7 @@
           "fcn_userregistration_0",
           "fcn_gotoregistrationpage_0",
           "fcn_donothing_0",
+          "fcn_newnodeadded_0",
           "fcn_registernewuser_0",
           "fcn_verifyuserregistered_0",
           "fcn_logout_0"
@@ -115,6 +129,7 @@
           "fcn_userregistration_0",
           "fcn_gotoregistrationpage_0",
           "fcn_donothing_0",
+          "fcn_newnodeadded_0",
           "fcn_registernewuser_0",
           "fcn_verifyuserregistered_0"
         ],
