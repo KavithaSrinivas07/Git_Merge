@@ -87,10 +87,10 @@
       },
       "fcn_assertentitycreated_0": {
         "id": "fcn_assertentitycreated_0",
-        "content": "Assert $entity Created",
+        "content": "Test Assert $entity Created",
         "nodeType": "state",
         "branches": [
-          "fcn_entityexiststrue_0"
+          "fcn_test3_0"
         ]
       },
       "fcn_entityexiststrue_0": {
@@ -98,6 +98,14 @@
         "content": "$entity.exists\u003dtrue",
         "nodeType": "state",
         "branches": []
+      },
+      "fcn_test3_0": {
+        "id": "fcn_test3_0",
+        "content": "Test 3",
+        "nodeType": "action",
+        "branches": [
+          "fcn_entityexiststrue_0"
+        ]
       }
     },
     "positions": {
@@ -146,7 +154,11 @@
         "left": 780.0
       },
       "fcn_entityexiststrue_0": {
-        "top": 391.0,
+        "top": 451.0,
+        "left": 780.0
+      },
+      "fcn_test3_0": {
+        "top": 396.1562,
         "left": 780.0
       }
     },
