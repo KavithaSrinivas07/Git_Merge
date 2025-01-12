@@ -42,7 +42,7 @@
       },
       {
         "commented": false,
-        "action": "_setValue",
+        "action": "_click",
         "stepParameters": [
           {
             "paramMode": "default",
