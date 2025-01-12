@@ -1,9 +1,7 @@
 {
-  "modifiedOn": "2024-05-10T12:51:57.046190400Z",
   "name": "Registration",
   "id": "-1",
   "type": 0,
-  "createdOn": "2024-04-03T17:36:44Z",
   "content": {
     "nodesMap": {
       "fcn_start_0": {
@@ -12,8 +10,7 @@
         "nodeType": "start",
         "branches": [
           "fcn_userregistration_0"
-        ],
-        "dataSetId": "-1"
+        ]
       },
       "fcn_userregistration_0": {
         "id": "fcn_userregistration_0",
@@ -21,17 +18,15 @@
         "nodeType": "pathlabel",
         "branches": [
           "fcn_gotoregistrationpage_0"
-        ],
-        "dataSetId": "-1"
+        ]
       },
       "fcn_gotoregistrationpage_0": {
         "id": "fcn_gotoregistrationpage_0",
         "content": "Go To Registration Page",
         "nodeType": "action",
         "branches": [
-          "fcn_registernewuser_0"
-        ],
-        "dataSetId": "-1"
+          "fcn_donothing_0"
+        ]
       },
       "fcn_registernewuser_0": {
         "id": "fcn_registernewuser_0",
@@ -40,7 +35,7 @@
         "branches": [
           "fcn_verifyuserregistered_0"
         ],
-        "dataSetId": "-1"
+        "validationBoundary": "validationend"
       },
       "fcn_verifyuserregistered_0": {
         "id": "fcn_verifyuserregistered_0",
@@ -48,41 +43,52 @@
         "nodeType": "state",
         "branches": [
           "fcn_logout_0"
-        ],
-        "dataSetId": "-1"
+        ]
       },
       "fcn_logout_0": {
         "id": "fcn_logout_0",
         "content": "Logout",
         "nodeType": "action",
-        "branches": [],
-        "dataSetId": "-1"
+        "branches": []
+      },
+      "fcn_donothing_0": {
+        "id": "fcn_donothing_0",
+        "content": "do nothing",
+        "nodeType": "action",
+        "branches": [
+          "fcn_registernewuser_0"
+        ],
+        "validationBoundary": "validationstart"
       }
     },
     "positions": {
       "fcn_start_0": {
-        "top": 150,
-        "left": 500
+        "top": 150.0,
+        "left": 500.0
       },
       "fcn_userregistration_0": {
-        "top": 211,
-        "left": 500
+        "top": 211.0,
+        "left": 500.0
       },
       "fcn_gotoregistrationpage_0": {
-        "top": 270,
-        "left": 500
+        "top": 269.0,
+        "left": 500.0
       },
       "fcn_registernewuser_0": {
-        "top": 329,
-        "left": 502
+        "top": 389.0,
+        "left": 502.0
       },
       "fcn_verifyuserregistered_0": {
-        "top": 393.13543701171875,
-        "left": 500
+        "top": 453.13543701171875,
+        "left": 500.0
       },
       "fcn_logout_0": {
-        "top": 458.29168701171875,
-        "left": 501
+        "top": 518.2916870117188,
+        "left": 501.0
+      },
+      "fcn_donothing_0": {
+        "top": 328.0,
+        "left": 500.0
       }
     },
     "settings": {
@@ -97,32 +103,34 @@
     "isPrimary": true,
     "pathNames": [
       {
-        "pathName": "Registration",
-        "dependsPathUID": "1713764926800",
-        "isValidationsEnabled": true,
         "pathKey": [
           "fcn_userregistration_0",
           "fcn_gotoregistrationpage_0",
+          "fcn_donothing_0",
           "fcn_registernewuser_0",
           "fcn_verifyuserregistered_0",
           "fcn_logout_0"
         ],
-        "pathTags": "Test",
+        "pathName": "Registration",
+        "dependsPathUID": "1713764926800",
         "dataSet": {
           "dataSetName": "user_details.csv",
           "dataSetGroupName": "group_1"
-        }
+        },
+        "pathTags": "Test",
+        "isValidationsEnabled": true
       },
       {
-        "dependsPathUID": "1713764926838",
-        "isValidationsEnabled": false,
         "pathKey": [
           "fcn_userregistration_0",
           "fcn_gotoregistrationpage_0",
+          "fcn_donothing_0",
           "fcn_registernewuser_0",
           "fcn_verifyuserregistered_0"
         ],
-        "dataSet": {}
+        "dependsPathUID": "1713764926838",
+        "dataSet": {},
+        "isValidationsEnabled": false
       }
     ],
     "flowChartUID": "fcUID_1713432997066",
