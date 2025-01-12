@@ -1,0 +1,35 @@
+{
+  "name": "Verify $entity Created",
+  "id": "0",
+  "type": 3,
+  "content": {
+    "isSystemKeyword": false,
+    "title": "Verify $entity Created",
+    "specific": [],
+    "parameters": [
+      {
+        "parameterId": "entity_",
+        "entityTypeId": "entity",
+        "suffix": ""
+      }
+    ],
+    "steps": [
+      {
+        "commented": false,
+        "action": "_exists",
+        "stepParameters": [
+          {
+            "paramMode": "code",
+            "customValue": "_heading1(\"Your Account Has Been Created!\")"
+          }
+        ],
+        "stepCategory": "inbuilt",
+        "stepType": "Assert",
+        "assertType": "Is_True",
+        "specific": []
+      }
+    ]
+  },
+  "enabled": false,
+  "parentId": ""
+}
