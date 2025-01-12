@@ -51,9 +51,8 @@
             "accessorId": "acc_textbox_firstname"
           },
           {
-            "paramMode": "default",
-            "parameterId": "entity_",
-            "attributeId": "attr_firstname_0"
+            "paramMode": "code",
+            "customValue": "\"name\""
           }
         ],
         "stepCategory": "inbuilt",
