@@ -42,6 +42,27 @@
       },
       {
         "commented": false,
+        "action": "_click",
+        "stepParameters": [
+          {
+            "paramMode": "default",
+            "parameterId": "entity_",
+            "attributeId": "attr_firstname_0",
+            "accessorId": "acc_textbox_firstname"
+          },
+          {
+            "paramMode": "default",
+            "parameterId": "entity_",
+            "attributeId": "attr_firstname_0"
+          }
+        ],
+        "stepCategory": "inbuilt",
+        "stepType": "Action",
+        "visibleCheck": true,
+        "specific": []
+      },
+      {
+        "commented": false,
         "action": "_setValue",
         "stepParameters": [
           {
@@ -79,6 +100,26 @@
         "stepCategory": "inbuilt",
         "stepType": "Action",
         "visibleCheck": true,
+        "specific": []
+      },
+      {
+        "commented": false,
+        "action": "_setValue",
+        "stepParameters": [
+          {
+            "paramMode": "default",
+            "parameterId": "entity_",
+            "attributeId": "attr_lastname_1",
+            "accessorId": "acc_textbox_lastname"
+          },
+          {
+            "paramMode": "default",
+            "parameterId": "entity_",
+            "attributeId": "attr_lastname_1"
+          }
+        ],
+        "stepCategory": "inbuilt",
+        "stepType": "Action",
         "specific": []
       },
       {
