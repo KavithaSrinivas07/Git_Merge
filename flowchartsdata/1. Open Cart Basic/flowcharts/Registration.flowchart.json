@@ -62,7 +62,7 @@
       },
       "fcn_newnodeadded_0": {
         "id": "fcn_newnodeadded_0",
-        "content": "New Node Added",
+        "content": "New Node Added edit",
         "nodeType": "action",
         "branches": [
           "fcn_registernewuser_0"
