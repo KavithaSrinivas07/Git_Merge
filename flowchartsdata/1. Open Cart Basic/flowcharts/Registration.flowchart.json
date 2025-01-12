@@ -25,7 +25,7 @@
         "content": "Go To Registration Page",
         "nodeType": "action",
         "branches": [
-          "fcn_iamgod_0"
+          "fcn_donothing_0"
         ]
       },
       "fcn_registernewuser_0": {
@@ -34,7 +34,8 @@
         "nodeType": "action",
         "branches": [
           "fcn_verifyuserregistered_0"
-        ]
+        ],
+        "validationBoundary": "validationend"
       },
       "fcn_verifyuserregistered_0": {
         "id": "fcn_verifyuserregistered_0",
@@ -50,17 +51,13 @@
         "nodeType": "action",
         "branches": []
       },
-      "fcn_iamgod_0": {
-        "id": "fcn_iamgod_0",
-        "content": "I am god",
+      "fcn_donothing_0": {
+        "id": "fcn_donothing_0",
+        "content": "do nothing",
         "nodeType": "action",
         "branches": [
           "fcn_registernewuser_0"
-        ],
-        "dataSet": {
-          "dataSetName": "user_details.csv",
-          "dataSetGroupName": "group_1"
-        }
+        ]
       }
     },
     "positions": {
@@ -88,19 +85,10 @@
         "top": 518.2916870117188,
         "left": 501.0
       },
-      "fcn_iamgod_0": {
-        "top": 329.0,
+      "fcn_donothing_0": {
+        "top": 328.0,
         "left": 500.0
       }
-    },
-    "settings": {
-      "maxProceedDepth": 100,
-      "maxProceedsForFirstDepth": 1,
-      "maxProceedsPerDepth": 1,
-      "maxPathRepititionsPerComboPath": 1,
-      "maxProceedsPerPath": 10000,
-      "maxToggles": 2,
-      "maxMatchingPaths": 3
     },
     "isPrimary": true,
     "pathNames": [
@@ -108,7 +96,7 @@
         "pathKey": [
           "fcn_userregistration_0",
           "fcn_gotoregistrationpage_0",
-          "fcn_iamgod_0",
+          "fcn_donothing_0",
           "fcn_registernewuser_0",
           "fcn_verifyuserregistered_0",
           "fcn_logout_0"
@@ -126,7 +114,7 @@
         "pathKey": [
           "fcn_userregistration_0",
           "fcn_gotoregistrationpage_0",
-          "fcn_iamgod_0",
+          "fcn_donothing_0",
           "fcn_registernewuser_0",
           "fcn_verifyuserregistered_0"
         ],
