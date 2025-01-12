@@ -87,7 +87,7 @@
       },
       "fcn_assertentitycreated_0": {
         "id": "fcn_assertentitycreated_0",
-        "content": "Verify $entity Created",
+        "content": "Verify $entity Created renamed",
         "nodeType": "state",
         "branches": [
           "fcn_entityexiststrue_0"

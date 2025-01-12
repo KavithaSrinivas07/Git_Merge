@@ -78,6 +78,7 @@
         ],
         "stepCategory": "inbuilt",
         "stepType": "Action",
+        "visibleCheck": true,
         "specific": []
       },
       {
