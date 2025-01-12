@@ -9,7 +9,8 @@
         "content": "Start",
         "nodeType": "start",
         "branches": [
-          "fcn_userregistration_0"
+          "fcn_userregistration_0",
+          "fcn_createentity_0"
         ]
       },
       "fcn_userregistration_0": {
@@ -67,6 +68,36 @@
         "branches": [
           "fcn_registernewuser_0"
         ]
+      },
+      "fcn_createentity_0": {
+        "id": "fcn_createentity_0",
+        "content": "Create entity",
+        "nodeType": "pathlabel",
+        "branches": [
+          "fcn_createentity_1"
+        ]
+      },
+      "fcn_createentity_1": {
+        "id": "fcn_createentity_1",
+        "content": "Create $entity",
+        "nodeType": "action",
+        "branches": [
+          "fcn_assertentitycreated_0"
+        ]
+      },
+      "fcn_assertentitycreated_0": {
+        "id": "fcn_assertentitycreated_0",
+        "content": "Verify $entity Created",
+        "nodeType": "state",
+        "branches": [
+          "fcn_entityexiststrue_0"
+        ]
+      },
+      "fcn_entityexiststrue_0": {
+        "id": "fcn_entityexiststrue_0",
+        "content": "$entity.exists\u003dfalse",
+        "nodeType": "state",
+        "branches": []
       }
     },
     "positions": {
@@ -101,6 +132,22 @@
       "fcn_newnodeadded_0": {
         "top": 387.0000228881836,
         "left": 500.0
+      },
+      "fcn_createentity_0": {
+        "top": 211.0,
+        "left": 780.0
+      },
+      "fcn_createentity_1": {
+        "top": 271.0,
+        "left": 780.0
+      },
+      "fcn_assertentitycreated_0": {
+        "top": 331.0,
+        "left": 780.0
+      },
+      "fcn_entityexiststrue_0": {
+        "top": 391.0,
+        "left": 780.0
       }
     },
     "isPrimary": true,
