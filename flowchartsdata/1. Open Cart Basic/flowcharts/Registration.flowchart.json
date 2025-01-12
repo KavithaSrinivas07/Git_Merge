@@ -95,7 +95,7 @@
       },
       "fcn_entityexiststrue_0": {
         "id": "fcn_entityexiststrue_0",
-        "content": "$entity.exists\u003dfalse",
+        "content": "$entity.exists\u003dtrue",
         "nodeType": "state",
         "branches": []
       }
